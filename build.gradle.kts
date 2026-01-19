@@ -16,5 +16,9 @@ subprojects {
 
     repositories {
         mavenCentral()
+        maven {
+            name = "Forge"
+            url = uri("https://maven.minecraftforge.net/")
+        }
     }
 }

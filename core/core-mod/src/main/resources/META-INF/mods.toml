@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+[[mods]]
+modId="core"
+version="1.0"
+displayName="Core Mod"
+description='''
+Core functionality for the Nation War modpack.
+'''

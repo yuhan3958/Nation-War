@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+[[mods]]
+modId="tech"
+version="1.0"
+displayName="Tech Mod"
+description='''
+Tech-related features for the Nation War modpack.
+'''

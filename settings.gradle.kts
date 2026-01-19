@@ -17,3 +17,18 @@ include(
     ":ore:ore-server",
     ":ore:ore-mod"
 )
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven("https://maven.minecraftforge.net")
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        maven("https://maven.minecraftforge.net")
+        mavenCentral()
+    }
+}

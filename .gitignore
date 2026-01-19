@@ -1,3 +1,12 @@
+# Forge
+run/
+runs/
+user_jvm_args.txt
+eclipse/
+.project
+.classpath
+.settings/
+
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar

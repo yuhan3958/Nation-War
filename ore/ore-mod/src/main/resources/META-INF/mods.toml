@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+[[mods]]
+modId="ore"
+version="1.0"
+displayName="Ore Mod"
+description='''
+Ore-related features for the Nation War modpack.
+'''

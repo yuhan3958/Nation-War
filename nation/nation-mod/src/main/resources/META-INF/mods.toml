@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+[[mods]]
+modId="nation"
+version="1.0"
+displayName="Nation Mod"
+description='''
+Nation-related features for the Nation War modpack.
+'''
