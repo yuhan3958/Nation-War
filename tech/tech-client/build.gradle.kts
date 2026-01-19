@@ -1,9 +1,8 @@
-
 plugins {
-    `kotlin-dsl`
+    `java-library`
 }
 
 dependencies {
-    implementation(project(":tech:tech-common"))
-    implementation(project(":core:core-client"))
+    api(project(":tech:tech-common"))
+    api(project(":core:core-client"))
 }

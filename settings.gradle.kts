@@ -1,3 +1,13 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = "Forge"
+            url = uri("https://maven.minecraftforge.net/")
+        }
+    }
+}
+
 rootProject.name = "nation-war"
 
 include(
@@ -14,21 +24,7 @@ include(
     ":tech:tech-server",
     ":tech:tech-mod",
     ":ore:ore-common",
+    ":ore:ore-client",
     ":ore:ore-server",
     ":ore:ore-mod"
 )
-
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        maven("https://maven.minecraftforge.net")
-        mavenCentral()
-    }
-}
-
-dependencyResolutionManagement {
-    repositories {
-        maven("https://maven.minecraftforge.net")
-        mavenCentral()
-    }
-}

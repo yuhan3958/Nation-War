@@ -9,7 +9,7 @@
         "testStrategy": "Verify that Gradle builds successfully and that all modules are recognized.",
         "priority": "medium",
         "dependencies": [],
-        "status": "in-progress",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -49,7 +49,7 @@
         "complexity": 5,
         "recommendedSubtasks": 3,
         "expansionPrompt": "Create the root directory, set up the Gradle build file, and configure the multi-module structure. Add the Forge plugin and dependencies for each module.",
-        "updatedAt": "2026-01-19T12:59:32.821Z"
+        "updatedAt": "2026-01-19T14:05:16.293Z"
       },
       {
         "id": "2",
@@ -61,7 +61,7 @@
         "dependencies": [
           "1"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -86,7 +86,8 @@
         ],
         "complexity": 4,
         "recommendedSubtasks": 2,
-        "expansionPrompt": "Install and configure IntelliJ IDEA with Gradle support. Set up the Gemini CLI for AI-assisted refactoring and small edits."
+        "expansionPrompt": "Install and configure IntelliJ IDEA with Gradle support. Set up the Gemini CLI for AI-assisted refactoring and small edits.",
+        "updatedAt": "2026-01-19T14:08:29.787Z"
       },
       {
         "id": "3",
@@ -98,7 +99,7 @@
         "dependencies": [
           "2"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -143,7 +144,8 @@
         ],
         "complexity": 8,
         "recommendedSubtasks": 4,
-        "expansionPrompt": "Define the ActionType enum, implement the Context models, create the Guard interface, and implement the GuardBus pipeline with priority and short-circuit logic."
+        "expansionPrompt": "Define the ActionType enum, implement the Context models, create the Guard interface, and implement the GuardBus pipeline with priority and short-circuit logic.",
+        "updatedAt": "2026-01-19T14:18:57.906Z"
       },
       {
         "id": "4",
@@ -155,7 +157,7 @@
         "dependencies": [
           "3"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -196,7 +198,8 @@
         ],
         "complexity": 7,
         "recommendedSubtasks": 3,
-        "expansionPrompt": "Implement the dimension claim policy service, create the Dynmap integration bridge, and ensure compatibility with the Forge API."
+        "expansionPrompt": "Implement the dimension claim policy service, create the Dynmap integration bridge, and ensure compatibility with the Forge API.",
+        "updatedAt": "2026-01-19T14:43:44.385Z"
       },
       {
         "id": "5",
@@ -208,7 +211,7 @@
         "dependencies": [
           "3"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -250,7 +253,8 @@
         ],
         "complexity": 7,
         "recommendedSubtasks": 3,
-        "expansionPrompt": "Develop the GuiRegistry, ScreenRegistry, and ScreenId system. Implement the GraphView widget and Deny Feedback rendering."
+        "expansionPrompt": "Develop the GuiRegistry, ScreenRegistry, and ScreenId system. Implement the GraphView widget and Deny Feedback rendering.",
+        "updatedAt": "2026-01-19T14:58:50.849Z"
       },
       {
         "id": "6",
@@ -262,7 +266,7 @@
         "dependencies": [
           "5"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -303,7 +307,8 @@
         ],
         "complexity": 7,
         "recommendedSubtasks": 3,
-        "expansionPrompt": "Define Nation creation rules, implement the membership and rank system, and add the alliance system with shared permissions."
+        "expansionPrompt": "Define Nation creation rules, implement the membership and rank system, and add the alliance system with shared permissions.",
+        "updatedAt": "2026-01-19T15:07:25.316Z"
       },
       {
         "id": "7",
@@ -660,9 +665,9 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-19T12:59:32.834Z",
+      "lastModified": "2026-01-19T15:07:25.325Z",
       "taskCount": 12,
-      "completedCount": 0,
+      "completedCount": 6,
       "tags": [
         "master"
       ]

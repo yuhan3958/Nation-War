@@ -1,5 +1,4 @@
 plugins {
-    `kotlin-dsl`
     id("net.minecraftforge.gradle") version "6.0.+"
 }
 

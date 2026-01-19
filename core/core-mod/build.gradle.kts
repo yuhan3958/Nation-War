@@ -1,6 +1,6 @@
 plugins {
-    `kotlin-dsl`
-    id("net.minecraftforge.gradle") version "6.0.+"
+    `java-library` // Explicitly apply java-library plugin
+    id("net.minecraftforge.gradle") version "6.0.14" // Use a fixed version
 }
 
 dependencies {
@@ -8,6 +8,10 @@ dependencies {
     implementation(project(":core:core-client"))
     implementation(project(":core:core-server"))
     minecraft("net.minecraftforge:forge:1.20.1-47.1.0")
+
+    // Allow CoreMod to see event classes from other modules without creating a hard dependency
+    compileOnly(project(":nation:nation-common"))
+    compileOnly(project(":nation:nation-mod"))
 }
 
 minecraft {
