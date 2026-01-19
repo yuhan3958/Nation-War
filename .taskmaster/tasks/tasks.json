@@ -1,0 +1,671 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": "1",
+        "title": "Repository Setup and Gradle Multi-Module Configuration",
+        "description": "Initialize the Git repository, set up Gradle multi-module structure, and configure the build system for Minecraft Forge 1.20.1.",
+        "details": "Create a root project directory with submodules for core-common, core-client, core-server, nation-common, nation-client, nation-server, tech-common, tech-client, tech-server, ore-common, ore-server. Configure Gradle to support multi-module builds and Forge integration.",
+        "testStrategy": "Verify that Gradle builds successfully and that all modules are recognized.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "in-progress",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Root Directory and Gradle Setup",
+            "description": "Create the root project directory and set up the Gradle build file to support multi-module builds for Minecraft Forge 1.20.1.",
+            "dependencies": [],
+            "details": "Initialize the root directory, create the Gradle build file, and configure it to manage the multi-module structure for the project.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Module Configuration and Forge Integration",
+            "description": "Configure each module (core-common, core-client, etc.) and integrate Forge dependencies into the Gradle build system.",
+            "dependencies": [
+              1
+            ],
+            "details": "Set up each submodule with the appropriate Gradle configuration, add Forge plugin and dependencies, and ensure all modules are recognized by the build system.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Verify Gradle Build and Module Recognition",
+            "description": "Ensure that the Gradle build system is correctly configured and that all modules are properly recognized and built.",
+            "dependencies": [
+              2
+            ],
+            "details": "Run Gradle build commands to confirm that the multi-module structure is functional and that Forge integration is working as expected.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 5,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Create the root directory, set up the Gradle build file, and configure the multi-module structure. Add the Forge plugin and dependencies for each module.",
+        "updatedAt": "2026-01-19T12:59:32.821Z"
+      },
+      {
+        "id": "2",
+        "title": "IDE and AI Workflow Setup",
+        "description": "Set up IntelliJ IDEA as the primary IDE and configure AI-assisted workflow using Gemini CLI and optional IDE plugin.",
+        "details": "Install and configure IntelliJ IDEA with Gradle support. Set up Gemini CLI for AI-assisted refactoring and small edits. Define a workflow plan for small edits in IDE and large refactors via CLI.",
+        "testStrategy": "Verify that Gemini CLI is installed and integrated with the project, and that the IDE is configured for multi-module development.",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "IntelliJ IDEA 설치 및 Gradle 설정",
+            "description": "IntelliJ IDEA를 설치하고, Gradle을 지원하는 환경을 구성합니다.",
+            "dependencies": [],
+            "details": "IntelliJ IDEA를 다운로드하여 설치하고, 프로젝트에 맞는 Gradle 설정을 적용합니다. Gradle을 사용하여 프로젝트 구조를 구성하고, 여러 모듈을 지원하는 설정을 완료합니다.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Gemini CLI 설정 및 AI 워크플로우 정의",
+            "description": "Gemini CLI를 설정하고, IDE와 CLI를 통한 AI 워크플로우를 정의합니다.",
+            "dependencies": [],
+            "details": "Gemini CLI를 설치하고, 프로젝트에 통합합니다. IDE 내에서 작은 수정 작업을 수행하고, CLI를 통해 대규모 리팩토링 작업을 처리하는 워크플로우를 정의합니다.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 4,
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "Install and configure IntelliJ IDEA with Gradle support. Set up the Gemini CLI for AI-assisted refactoring and small edits."
+      },
+      {
+        "id": "3",
+        "title": "Core-Common Module Development",
+        "description": "Implement the shared API for Core, including ActionType enum, Context models, Guard interface, and GuardBus pipeline.",
+        "details": "Define the ActionType enum with all specified action types. Implement the Context models with actor, dimension, position, and item details. Create the Guard interface and GuardBus pipeline with priority and short-circuit logic.",
+        "testStrategy": "Write unit tests for each enum, model, and interface to ensure correctness and compatibility.",
+        "priority": "high",
+        "dependencies": [
+          "2"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "ActionType Enum Definition",
+            "description": "Define the ActionType enum with all specified action types for the Core-Common Module.",
+            "dependencies": [],
+            "details": "Create a comprehensive ActionType enum that includes all required action types for the Core-Common Module.",
+            "status": "pending",
+            "testStrategy": "Write unit tests to ensure that all action types are correctly defined and accessible.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Context Models Implementation",
+            "description": "Implement the Context models with actor, dimension, position, and item details.",
+            "dependencies": [],
+            "details": "Develop the Context models to encapsulate actor, dimension, position, and item details for use in the Core-Common Module.",
+            "status": "pending",
+            "testStrategy": "Write unit tests to validate that the Context models correctly represent all required details.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Guard Interface Creation",
+            "description": "Create the Guard interface for the Core-Common Module.",
+            "dependencies": [],
+            "details": "Define the Guard interface that will be used to enforce access control and validation logic.",
+            "status": "pending",
+            "testStrategy": "Write unit tests to ensure that the Guard interface is correctly structured and can be implemented.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "GuardBus Pipeline Implementation",
+            "description": "Implement the GuardBus pipeline with priority and short-circuit logic.",
+            "dependencies": [],
+            "details": "Develop the GuardBus pipeline to process Guard actions with priority-based execution and short-circuit capabilities.",
+            "status": "pending",
+            "testStrategy": "Write unit tests to verify that the GuardBus pipeline functions correctly with priority and short-circuit logic.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 8,
+        "recommendedSubtasks": 4,
+        "expansionPrompt": "Define the ActionType enum, implement the Context models, create the Guard interface, and implement the GuardBus pipeline with priority and short-circuit logic."
+      },
+      {
+        "id": "4",
+        "title": "Core-Server Module Development",
+        "description": "Implement the dimension claim policy service and Dynmap integration bridge.",
+        "details": "Create a dimension claim policy service that supports configurable allow/deny lists. Implement the Dynmap integration bridge with compile-only dependency and marker set layer.",
+        "testStrategy": "Verify that the dimension claim policy works correctly and that Dynmap integration is enabled when present.",
+        "priority": "high",
+        "dependencies": [
+          "3"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Dimension Claim Policy Service Implementation",
+            "description": "Develop the dimension claim policy service that supports configurable allow/deny lists for managing dimension access.",
+            "dependencies": [
+              3
+            ],
+            "details": "Implement a service that allows users to define and manage allow/deny lists for dimension claims, ensuring proper access control.",
+            "status": "pending",
+            "testStrategy": "Verify that the policy service correctly enforces allow/deny rules and handles edge cases.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Dynmap Integration Bridge Development",
+            "description": "Create the Dynmap integration bridge with compile-only dependency and marker set layer for visualizing dimension claims.",
+            "dependencies": [
+              3
+            ],
+            "details": "Implement a bridge that integrates with Dynmap to display dimension claim markers, using a compile-only dependency for compatibility.",
+            "status": "pending",
+            "testStrategy": "Ensure that the Dynmap integration works correctly and that markers are displayed as expected.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Forge API Compatibility Verification",
+            "description": "Ensure the dimension claim policy service and Dynmap integration bridge are compatible with the Forge API.",
+            "dependencies": [
+              4
+            ],
+            "details": "Validate that all implemented features work seamlessly with the Forge API, including event handling and mod compatibility.",
+            "status": "pending",
+            "testStrategy": "Run compatibility tests against the Forge API to confirm that no conflicts or errors occur.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 7,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Implement the dimension claim policy service, create the Dynmap integration bridge, and ensure compatibility with the Forge API."
+      },
+      {
+        "id": "5",
+        "title": "Core-Client Module Development",
+        "description": "Implement the shared GUI framework and Deny Feedback rendering.",
+        "details": "Develop the GuiRegistry, ScreenRegistry, and ScreenId system. Implement the GraphView widget for reusable graph rendering. Add Deny Feedback rendering for actionbar/toast/chat.",
+        "testStrategy": "Verify that the GUI framework is functional and that Deny Feedback is displayed correctly.",
+        "priority": "high",
+        "dependencies": [
+          "3"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "GuiRegistry 및 ScreenRegistry 시스템 개발",
+            "description": "Core-Client 모듈에서 GuiRegistry, ScreenRegistry, ScreenId 시스템을 구현하여 GUI 프레임워크를 구축합니다.",
+            "dependencies": [
+              5
+            ],
+            "details": "GuiRegistry는 사용 가능한 UI 요소를 관리하고, ScreenRegistry는 화면을 등록하는 역할을 합니다. ScreenId 시스템은 화면을 식별하는 고유한 ID를 제공합니다.",
+            "status": "pending",
+            "testStrategy": "GUI 프레임워크가 제대로 작동하는지 확인하고, ScreenId 시스템이 올바르게 동작하는지 검증합니다.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "GraphView 위젯 및 Deny Feedback 렌더링 구현",
+            "description": "GraphView 위젯을 개발하여 재사용 가능한 그래프 렌더링을 지원하고, Deny Feedback 렌더링을 액션바, 토스트, 채팅에 추가합니다.",
+            "dependencies": [
+              5
+            ],
+            "details": "GraphView 위젯은 다양한 그래프를 표시할 수 있도록 설계되고, Deny Feedback 렌더링은 사용자에게 명확한 피드백을 제공합니다.",
+            "status": "pending",
+            "testStrategy": "GraphView 위젯이 제대로 작동하고, Deny Feedback이 액션바, 토스트, 채팅에 올바르게 표시되는지 검증합니다.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Core-Client 모듈 통합 및 테스트",
+            "description": "Core-Client 모듈의 모든 기능을 통합하고, 테스트 전략에 따라 기능을 검증합니다.",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "GuiRegistry, ScreenRegistry, ScreenId 시스템, GraphView 위젯, Deny Feedback 렌더링을 통합하고, 테스트 전략에 따라 기능을 검증합니다.",
+            "status": "pending",
+            "testStrategy": "GUI 프레임워크와 Deny Feedback 렌더링이 제대로 작동하는지 확인하고, 모든 기능이 통합되었는지 검증합니다.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 7,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Develop the GuiRegistry, ScreenRegistry, and ScreenId system. Implement the GraphView widget and Deny Feedback rendering."
+      },
+      {
+        "id": "6",
+        "title": "Nation-Common Module Development",
+        "description": "Implement Nation creation, membership, and alliance system.",
+        "details": "Define Nation creation rules with at least 3 players. Implement membership and rank system. Add alliance system with shared permissions.",
+        "testStrategy": "Write unit tests to ensure Nation creation and alliance logic work as intended.",
+        "priority": "high",
+        "dependencies": [
+          "5"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Define Nation Creation Rules",
+            "description": "Establish the rules for creating a Nation with at least 3 players.",
+            "dependencies": [
+              6
+            ],
+            "details": "Implement logic to validate that a Nation is created by at least 3 players and ensure the rules are enforced during creation.",
+            "status": "pending",
+            "testStrategy": "Write unit tests to verify that Nation creation fails if fewer than 3 players are involved.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement Membership and Rank System",
+            "description": "Develop the membership and rank system for Nations.",
+            "dependencies": [
+              6
+            ],
+            "details": "Create data structures and methods to manage player membership and rank hierarchy within a Nation.",
+            "status": "pending",
+            "testStrategy": "Test the membership and rank system to ensure that players can be added, removed, and ranked correctly.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Add Alliance System with Shared Permissions",
+            "description": "Implement the alliance system with shared permissions for Nations.",
+            "dependencies": [
+              6
+            ],
+            "details": "Design and code the logic for Nations to form alliances, including shared permissions and alliance-specific rules.",
+            "status": "pending",
+            "testStrategy": "Verify that alliance creation, shared permissions, and alliance logic function correctly through unit tests.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 7,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Define Nation creation rules, implement the membership and rank system, and add the alliance system with shared permissions."
+      },
+      {
+        "id": "7",
+        "title": "Nation-Server Module Development",
+        "description": "Implement claim management, war system, and NationGuard for Core GuardBus.",
+        "details": "Create claim management system with dimension-aware logic. Implement war system with participant queries. Register NationGuard for Core GuardBus to enforce permissions.",
+        "testStrategy": "Verify that claim management and war logic function correctly, and that NationGuard is registered and works.",
+        "priority": "high",
+        "dependencies": [
+          "6"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Claim Management System Implementation",
+            "description": "Develop a claim management system with dimension-aware logic for the Nation-Server module.",
+            "dependencies": [
+              7
+            ],
+            "details": "Implement logic to manage claims across different dimensions, ensuring proper handling of claim boundaries and permissions.",
+            "status": "pending",
+            "testStrategy": "Verify that claim management functions correctly and handles edge cases like overlapping claims.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "War System Implementation",
+            "description": "Implement the war system with participant queries for the Nation-Server module.",
+            "dependencies": [
+              7
+            ],
+            "details": "Create a system to manage war declarations, participant tracking, and query logic for active wars.",
+            "status": "pending",
+            "testStrategy": "Validate that the war system allows for accurate participant tracking and query operations.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "NationGuard Registration for Core GuardBus",
+            "description": "Register NationGuard for Core GuardBus to enforce permissions in the Nation-Server module.",
+            "dependencies": [
+              7
+            ],
+            "details": "Integrate NationGuard with Core GuardBus to ensure proper permission enforcement across the system.",
+            "status": "pending",
+            "testStrategy": "Confirm that NationGuard is registered and works as expected with Core GuardBus.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Integration and Compatibility Testing",
+            "description": "Ensure compatibility and integration of the Nation-Server module with Core GuardBus.",
+            "dependencies": [
+              7
+            ],
+            "details": "Test the claim management, war system, and NationGuard integration to ensure they function correctly together.",
+            "status": "pending",
+            "testStrategy": "Run comprehensive tests to verify that all components work seamlessly with Core GuardBus.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 8,
+        "recommendedSubtasks": 4,
+        "expansionPrompt": "Create the claim management system with dimension-aware logic, implement the war system with participant queries, and register NationGuard for Core GuardBus."
+      },
+      {
+        "id": "8",
+        "title": "Tech-Common Module Development",
+        "description": "Implement Tech JSON loading, validation, and TechGuard for Core GuardBus.",
+        "details": "Load and validate Tech JSON nodes with DAG constraints. Track unlocked nodes and permits per nation. Register TechGuard for Core GuardBus to enforce permits.",
+        "testStrategy": "Write unit tests to validate JSON loading, DAG constraints, and TechGuard functionality.",
+        "priority": "high",
+        "dependencies": [
+          "7"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Tech JSON 파일 로드 및 검증",
+            "description": "Tech JSON 파일을 로드하고, DAG(향상 그래프) 제약 조건을 충족하는지 검증합니다.",
+            "dependencies": [
+              8
+            ],
+            "details": "JSON 파일을 읽고, 노드 간의 의존성 관계를 확인하여 사이클이 없는지 검증해야 합니다.",
+            "status": "pending",
+            "testStrategy": "JSON 파일 로드 및 DAG 검증을 위한 단위 테스트를 작성합니다.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "미개방 노드 및 허가권 추적 시스템 구현",
+            "description": "각 국가별로 미개방 노드와 허가권을 추적하는 시스템을 구현합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "노드의 개방 상태와 허가권을 저장하고, 국가별로 접근 권한을 관리하는 데이터 구조를 설계합니다.",
+            "status": "pending",
+            "testStrategy": "노드 상태와 허가권을 관리하는 로직을 테스트하여 정확성과 효율성을 검증합니다.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "TechGuard 인터페이스 및 Core GuardBus 등록",
+            "description": "TechGuard 인터페이스를 구현하고, Core GuardBus에 등록하여 허가권을 강제합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "TechGuard가 허가권을 검사하고, Core GuardBus의 파이프라인에 등록하여 실행 흐름을 제어합니다.",
+            "status": "pending",
+            "testStrategy": "TechGuard의 권한 검사 로직과 Core GuardBus의 통합 기능을 테스트합니다.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Tech-Common 모듈 통합 및 테스트",
+            "description": "모든 기능을 통합하고, 기능의 정확성과 안정성을 검증합니다.",
+            "dependencies": [
+              3
+            ],
+            "details": "JSON 로드, DAG 검증, 허가권 관리, TechGuard 등록 기능을 통합하여 전체 시스템을 검증합니다.",
+            "status": "pending",
+            "testStrategy": "모듈 전체를 통합 테스트하여 기능적 일관성과 예외 처리를 확인합니다.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 8,
+        "recommendedSubtasks": 4,
+        "expansionPrompt": "Load and validate Tech JSON nodes, track unlocked nodes and permits per nation, and register TechGuard for Core GuardBus."
+      },
+      {
+        "id": "9",
+        "title": "Ore-Common Module Development",
+        "description": "Implement ore generation with vein-based distribution and Ore Dictionary tagging.",
+        "details": "Replace vanilla ore distribution with vein-based generation. Register all ores and processed forms into Forge tags for compatibility.",
+        "testStrategy": "Verify that ore generation works correctly and that all tags are registered properly.",
+        "priority": "high",
+        "dependencies": [
+          "8"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Vein-Based Ore Generation Implementation",
+            "description": "Replace the vanilla ore distribution system with a vein-based generation algorithm.",
+            "dependencies": [
+              9
+            ],
+            "details": "Implement a system where ores are generated in veins rather than individual blocks, ensuring balanced and natural distribution.",
+            "status": "pending",
+            "testStrategy": "Verify that ore generation works correctly and that the vein-based system produces natural patterns.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Forge Tag Registration for Ores",
+            "description": "Register all ores and their processed forms into Forge tags for compatibility.",
+            "dependencies": [
+              9
+            ],
+            "details": "Ensure that all ores and their processed forms (e.g., dust, ingots) are registered into the Ore Dictionary and Forge tags for mod compatibility.",
+            "status": "pending",
+            "testStrategy": "Check that all tags are registered properly and that ores are recognized by other mods.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Compatibility with Forge API",
+            "description": "Ensure the ore generation system is fully compatible with the Forge API.",
+            "dependencies": [
+              9
+            ],
+            "details": "Validate that the custom ore generation system adheres to Forge's API standards and integrates with other mods without conflicts.",
+            "status": "pending",
+            "testStrategy": "Verify that the system functions correctly within the Forge environment and does not cause any errors.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 7,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Replace vanilla ore distribution with vein-based generation, register all ores and processed forms into Forge tags, and ensure compatibility with the Forge API."
+      },
+      {
+        "id": "10",
+        "title": "Dynmap Integration Implementation",
+        "description": "Implement Dynmap support with compile-only dependency and marker set updates.",
+        "details": "Add compile-only dependency for Dynmap API. Detect Dynmap presence at runtime and update markers on claim/unclaim and nation style changes.",
+        "testStrategy": "Verify that Dynmap integration is enabled when present and that markers are updated correctly.",
+        "priority": "high",
+        "dependencies": [
+          "9"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Dynmap API Compile-Only Dependency Setup",
+            "description": "Add the compile-only dependency for the Dynmap API to the project's build configuration.",
+            "dependencies": [],
+            "details": "Configure the build system to include the Dynmap API as a compile-time dependency only, ensuring it is not included in the final mod package.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Runtime Dynmap Detection Implementation",
+            "description": "Implement logic to detect the presence of Dynmap at runtime and initialize the integration accordingly.",
+            "dependencies": [
+              1
+            ],
+            "details": "Write code to check for the presence of Dynmap during runtime and initialize the marker update system if Dynmap is detected.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Marker Update Logic for Claim/Unclaim and Nation Style Changes",
+            "description": "Develop logic to update markers on claim, unclaim, and nation style changes using the Dynmap API.",
+            "dependencies": [
+              2
+            ],
+            "details": "Implement event listeners for claim/unclaim and nation style changes, and update markers on the Dynmap map accordingly.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 6,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Add compile-only dependency for Dynmap API, detect Dynmap presence at runtime, and update markers on claim/unclaim and nation style changes."
+      },
+      {
+        "id": "11",
+        "title": "Build System Configuration and Packaging",
+        "description": "Configure Gradle for packaging and running the mod.",
+        "details": "Set up Gradle tasks for building, packaging, and running the mod. Define run configurations for development and testing.",
+        "testStrategy": "Verify that Gradle builds and packages the mod correctly and that run configurations are functional.",
+        "priority": "medium",
+        "dependencies": [
+          "10"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Gradle Task Configuration for Building and Packaging",
+            "description": "Set up Gradle tasks for building, packaging, and running the mod.",
+            "dependencies": [
+              11
+            ],
+            "details": "Configure Gradle to handle the mod build process, including packaging and execution.",
+            "status": "pending",
+            "testStrategy": "Verify that Gradle builds and packages the mod correctly.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Define Run Configurations for Development and Testing",
+            "description": "Create run configurations for development and testing environments.",
+            "dependencies": [
+              11
+            ],
+            "details": "Set up different run configurations to support development and testing workflows.",
+            "status": "pending",
+            "testStrategy": "Verify that run configurations are functional and support development and testing.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 4,
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "Set up Gradle tasks for building, packaging, and running the mod. Define run configurations for development and testing."
+      },
+      {
+        "id": "12",
+        "title": "End-to-End Prototype Testing",
+        "description": "Test the full mod with nations, claims, alliances, wars, and tech progression.",
+        "details": "Create nations, claim chunks, and test alliance permissions. Verify that wars bypass restrictions. Test Tech graph loading and resource consumption. Ensure Ore veins generate and tags are correct.",
+        "testStrategy": "Run the mod in a test environment and validate all functionality works as intended.",
+        "priority": "high",
+        "dependencies": [
+          "11"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Nations Creation and Membership Setup",
+            "description": "Create nations with at least 3 players and set up membership and rank systems.",
+            "dependencies": [
+              11
+            ],
+            "details": "Implement nation creation logic, define membership rules, and set up rank-based permissions.",
+            "status": "pending",
+            "testStrategy": "Run unit tests to ensure nation creation and membership logic work as intended.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Alliance Permissions and Testing",
+            "description": "Test alliance permissions and ensure shared access is correctly enforced.",
+            "dependencies": [
+              11
+            ],
+            "details": "Validate that alliance members have appropriate access to shared resources and actions.",
+            "status": "pending",
+            "testStrategy": "Run integration tests to ensure alliance permissions are correctly applied.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "War System and Restrictions Testing",
+            "description": "Verify that wars bypass restrictions and function as intended.",
+            "dependencies": [
+              11
+            ],
+            "details": "Simulate war scenarios and ensure that war participants can bypass normal restrictions.",
+            "status": "pending",
+            "testStrategy": "Run end-to-end tests to validate war system behavior.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Tech Graph Loading and Resource Consumption",
+            "description": "Test the loading of the tech graph and verify resource consumption logic.",
+            "dependencies": [
+              11
+            ],
+            "details": "Validate that the tech progression system loads correctly and that resource consumption is tracked accurately.",
+            "status": "pending",
+            "testStrategy": "Run unit tests to ensure tech graph and resource logic function correctly.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Ore Veins Generation and Tag Validation",
+            "description": "Ensure ore veins generate correctly and tags are validated.",
+            "dependencies": [
+              11
+            ],
+            "details": "Test ore vein generation in the world and validate that the tags are correct and consistent.",
+            "status": "pending",
+            "testStrategy": "Run world generation tests to validate ore vein generation and tag correctness.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 9,
+        "recommendedSubtasks": 5,
+        "expansionPrompt": "Create nations, claim chunks, and test alliance permissions. Verify that wars bypass restrictions. Test Tech graph loading and resource consumption. Ensure Ore veins generate and tags are correct."
+      }
+    ],
+    "metadata": {
+      "version": "1.0.0",
+      "lastModified": "2026-01-19T12:59:32.834Z",
+      "taskCount": 12,
+      "completedCount": 0,
+      "tags": [
+        "master"
+      ]
+    }
+  }
+}

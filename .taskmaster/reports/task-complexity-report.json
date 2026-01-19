@@ -1,0 +1,109 @@
+{
+	"meta": {
+		"generatedAt": "2026-01-19T12:44:23.475Z",
+		"tasksAnalyzed": 12,
+		"totalTasks": 12,
+		"analysisCount": 12,
+		"thresholdScore": 5,
+		"projectName": "Task Master",
+		"usedResearch": true
+	},
+	"complexityAnalysis": [
+		{
+			"taskId": 1,
+			"taskTitle": "Repository Setup and Gradle Multi-Module Configuration",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Create the root directory, set up the Gradle build file, and configure the multi-module structure. Add the Forge plugin and dependencies for each module.",
+			"reasoning": "This task involves setting up the foundational structure for the project, which requires careful configuration of Gradle and Forge. While it's a setup task, it's critical for the project and requires attention to detail."
+		},
+		{
+			"taskId": 2,
+			"taskTitle": "IDE and AI Workflow Setup",
+			"complexityScore": 4,
+			"recommendedSubtasks": 2,
+			"expansionPrompt": "Install and configure IntelliJ IDEA with Gradle support. Set up the Gemini CLI for AI-assisted refactoring and small edits.",
+			"reasoning": "This task is more about configuration and tool setup, which is relatively straightforward. However, it requires integration with external tools and ensuring compatibility with the project structure."
+		},
+		{
+			"taskId": 3,
+			"taskTitle": "Core-Common Module Development",
+			"complexityScore": 8,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Define the ActionType enum, implement the Context models, create the Guard interface, and implement the GuardBus pipeline with priority and short-circuit logic.",
+			"reasoning": "This task involves implementing a complex shared API with multiple components. It requires careful design and testing to ensure compatibility and correctness."
+		},
+		{
+			"taskId": 4,
+			"taskTitle": "Core-Server Module Development",
+			"complexityScore": 7,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Implement the dimension claim policy service, create the Dynmap integration bridge, and ensure compatibility with the Forge API.",
+			"reasoning": "This task involves implementing a policy system and integrating with an external API, which requires handling edge cases and ensuring compatibility."
+		},
+		{
+			"taskId": 5,
+			"taskTitle": "Core-Client Module Development",
+			"complexityScore": 7,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Develop the GuiRegistry, ScreenRegistry, and ScreenId system. Implement the GraphView widget and Deny Feedback rendering.",
+			"reasoning": "This task involves creating a GUI framework and rendering logic, which requires attention to detail and integration with the client-side rendering system."
+		},
+		{
+			"taskId": 6,
+			"taskTitle": "Nation-Common Module Development",
+			"complexityScore": 7,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Define Nation creation rules, implement the membership and rank system, and add the alliance system with shared permissions.",
+			"reasoning": "This task involves implementing a complex system for managing nations and their interactions, which requires careful design and testing."
+		},
+		{
+			"taskId": 7,
+			"taskTitle": "Nation-Server Module Development",
+			"complexityScore": 8,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Create the claim management system with dimension-aware logic, implement the war system with participant queries, and register NationGuard for Core GuardBus.",
+			"reasoning": "This task involves implementing a complex system for managing claims and wars, which requires handling edge cases and ensuring compatibility with the Core GuardBus."
+		},
+		{
+			"taskId": 8,
+			"taskTitle": "Tech-Common Module Development",
+			"complexityScore": 8,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Load and validate Tech JSON nodes, track unlocked nodes and permits per nation, and register TechGuard for Core GuardBus.",
+			"reasoning": "This task involves implementing a complex system for managing tech progression and permissions, which requires careful design and testing."
+		},
+		{
+			"taskId": 9,
+			"taskTitle": "Ore-Common Module Development",
+			"complexityScore": 7,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Replace vanilla ore distribution with vein-based generation, register all ores and processed forms into Forge tags, and ensure compatibility with the Forge API.",
+			"reasoning": "This task involves implementing a custom ore generation system and integrating with the Forge API, which requires attention to detail and compatibility checks."
+		},
+		{
+			"taskId": 10,
+			"taskTitle": "Dynmap Integration Implementation",
+			"complexityScore": 6,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Add compile-only dependency for Dynmap API, detect Dynmap presence at runtime, and update markers on claim/unclaim and nation style changes.",
+			"reasoning": "This task involves integrating with an external API and handling runtime detection, which requires careful implementation and testing."
+		},
+		{
+			"taskId": 11,
+			"taskTitle": "Build System Configuration and Packaging",
+			"complexityScore": 4,
+			"recommendedSubtasks": 2,
+			"expansionPrompt": "Set up Gradle tasks for building, packaging, and running the mod. Define run configurations for development and testing.",
+			"reasoning": "This task involves configuring the build system, which is relatively straightforward but requires attention to detail to ensure correct packaging and execution."
+		},
+		{
+			"taskId": 12,
+			"taskTitle": "End-to-End Prototype Testing",
+			"complexityScore": 9,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Create nations, claim chunks, and test alliance permissions. Verify that wars bypass restrictions. Test Tech graph loading and resource consumption. Ensure Ore veins generate and tags are correct.",
+			"reasoning": "This task involves comprehensive testing of all major features, which requires setting up a test environment and validating the behavior of the entire system."
+		}
+	]
+}
